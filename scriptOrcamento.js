@@ -115,7 +115,7 @@ function atualizarOrcamento() {
         valorAtualizado += PRECOS.horaExtra;
         const item = document.createElement('li');
         item.textContent = '+ 1 hora extra';
-        listaEntregas.appendChild(item);
+        listaGravacao.appendChild(item);
     }
 
     // Resolução 4K (Adiciona apenas em ENTREGAS)
