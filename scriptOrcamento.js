@@ -24,7 +24,7 @@ const PRECOS = {
     noivo: 350,
     ensaio: 500,
     filme2m: 400,     // Altere para o preço real do vídeo de 2.5 min
-    drone: 600,       // Altere para o preço real da captação com drone
+    drone: 400,       // Altere para o preço real da captação com drone
     cerimonia: 450,   // Altere para o preço real da cerimônia na íntegra
     horaExtra: 300,   // Altere para o preço real da hora extra
     quatroKa: 500,    // Altere para o preço real da entrega em 4K
