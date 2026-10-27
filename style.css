@@ -14,7 +14,7 @@
     padding: 25px 25px;
 }
 .unit-logo{
-    width: 150px;
+    width: 100px;
     height: auto;
     display: block;
 
@@ -24,8 +24,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 45px;
-  height: 45px;
+  width: 35px;
+  height: 35px;
 }
 .hambuer-menu{
     filter: invert(100%);
