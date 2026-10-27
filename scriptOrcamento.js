@@ -20,8 +20,8 @@ const campoTotal = document.getElementById('valor-total');
 // 2. CONFIGURAÇÃO DE PREÇOS DOS OPCIONAIS
 // ==========================================
 const PRECOS = {
-    noiva: 350,
-    noivo: 350,
+    noiva: 450,
+    noivo: 450,
     ensaio: 500,
     filme2m: 400,     // Altere para o preço real do vídeo de 2.5 min
     drone: 400,       // Altere para o preço real da captação com drone
@@ -40,8 +40,8 @@ function formatarMoeda(valor) {
 // 3. FUNÇÃO PRINCIPAL DE ATUALIZAÇÃO
 // ==========================================
 function atualizarOrcamento() {
-    // O valor base do pacote ESSENTIAL começa fixo em 4000
-    let valorAtualizado = 4000; 
+    // O valor base do pacote ESSENTIAL começa fixo em 5000
+    let valorAtualizado = 5000; 
     
     // Reseta e mantém os itens padrão de GRAVAÇÃO
     listaGravacao.innerHTML = `
