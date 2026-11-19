@@ -66,13 +66,22 @@
     padding: 10px 30px 10px 30px;
     margin-top: 15px;
 }
+
+.primeira-proposta{
+    background-color: #fafafa;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 10px 10px;
+    /* box-shadow: 3px 3px 30px 3px rgba(0, 0, 0, 0.1);  */
+}
+
 .area-orcamento{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    padding: 30px 30px;
+    padding: 15px 15px;
+    
 
 }
 .img-casamento{
@@ -131,7 +140,8 @@
 }
 
 .area-switch {
-    margin: 20px 20px;
+    margin: 10px 10px;
+    
 }
 
 .area-switch div {
@@ -141,47 +151,90 @@
     gap: 12px;
     padding-bottom: 10px;
 }
-.area-duvidas h1{
-    margin-top: 30px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 30px;
-    font-size: 30px;
-    font-weight: 700;
-    text-align: center;
+.area-duvidas {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-.area-duvidas details summary { 
-    color: #fff; 
-    background-color: #282828; 
-    padding: 20px; 
-    cursor: pointer; 
-    margin-bottom: 1px;
-
+.area-duvidas h1 {
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
 }
 
-/* Nova regra para animar o conteúdo que expande */
+/* Cada item separado apenas por uma linha inferior fina */
+.area-duvidas details {
+  border-bottom: 1px solid #000000;
+  background-color: transparent;
+}
+
+.area-duvidas details summary {
+  color: #000000;
+  background-color: transparent;
+  padding: 24px 0;
+  font-size: 18px;
+  font-weight: 400; /* Peso normal quando fechado, igual à imagem */
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: font-weight 0.2s ease;
+}
+
+/* Remove a setinha padrão no Safari/Chrome */
+.area-duvidas details summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Ícone + à direita */
+.area-duvidas details summary::after {
+  content: "+";
+  font-size: 24px;
+  font-weight: 400;
+  color: #000000;
+  margin-left: 16px;
+  line-height: 1;
+}
+
+/* Quando aberto: título em negrito e ícone muda para - */
+.area-duvidas details[open] summary {
+  font-weight: 700;
+}
+
+.area-duvidas details[open] summary::after {
+  content: "-";
+}
+
+/* Nova regra para animar o conteúdo que expande (mantida do seu original) */
 .area-duvidas details::details-content {
-    transition: opacity 0.5s ease, transform 0.5s ease;
-    opacity: 0;
-    transform: translateY(-10px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  opacity: 0;
+  transform: translateY(-10px);
 }
 
 /* Estado quando o details estiver aberto ([open]) */
 .area-duvidas details[open]::details-content {
-    opacity: 1;
-    transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* Estilo do Parágrafo (Texto da dúvida) */
-.area-duvidas details p { 
-    background-color: #fafafa; 
-    padding: 20px; 
-    margin: 0px 20px 20px 20px; 
-    border-radius: 0px 0px 10px 10px; 
-    box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.1); 
-    overflow: hidden; /* Garante que o conteúdo não vaze na animação */
+.area-duvidas details p {
+  background-color: transparent;
+  color: #333333;
+  padding: 0 0 24px 0;
+  margin: 0;
+  line-height: 1.6;
+  overflow: hidden;
 }
+
+
 
 .vamos-conversar{
     margin: 40px 20px 40px 20px;
